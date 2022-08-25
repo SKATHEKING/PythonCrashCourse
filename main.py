@@ -31,3 +31,15 @@ def allCoolCars():
         print(f'{car} is a super cool car!')
 
 allCoolCars()
+
+#list comprehension
+
+temps = [221.0,223.0, 500.0, 600.0]
+new_temps = [temps * 10 for temp in temps ]
+
+print(new_temps)
+
+#reading files
+cv = open("cvintext.txt")
+print(cv.read())
+cv.close()
